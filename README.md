@@ -34,7 +34,12 @@ yarn start
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Credit and Collaborations
-TODO
+
+## Resources
+
+[React Controlled Components](https://reactjs.org/docs/forms.html#controlled-components)
+
+[Adding Custom Environmental Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 
 ### Install dependencies
 
@@ -56,6 +61,36 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 8:30pm
 
-Finish time: 11:40 ( 2hr break)
+Finish time: 10:30pm
 
-Actual time needed to complete: 1 hour 10 minutes
+Actual time needed to complete: 2 hour (errors with netlify)
+
+### Task 2 - See a latitude and longitude of a location
+
+Estimate of time needed to complete: 1 hours
+
+Start time: 10:30pm
+
+Finish time: 11:00pm
+
+Actual time needed to complete: 30 minutes
+
+### Task 3 - See a map of the city searched & CSS styling
+
+Estimate of time needed to complete: 1.5 hours
+
+Start time: 11:00pm
+
+Finish time: 11:40pm
+
+Actual time needed to complete: 40 minutes
+
+### Task 4 - Appropriate Error Messages served to user: 400, 404, 500
+
+Estimate of time needed to complete: 1.5 hours
+
+Start time: 11:40pm
+
+Finish time:
+
+Actual time needed to complete:
