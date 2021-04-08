@@ -34,7 +34,12 @@ yarn start
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Credit and Collaborations
-TODO
+
+## Resources
+
+[React Controlled Components](https://reactjs.org/docs/forms.html#controlled-components)
+
+[Adding Custom Environmental Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 
 ### Install dependencies
 
@@ -56,6 +61,6 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 8:30pm
 
-Finish time: 11:40 ( 2hr break)
+Finish time: 9:30pm
 
-Actual time needed to complete: 1 hour 10 minutes
+Actual time needed to complete: 1 hour
