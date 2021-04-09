@@ -28,12 +28,11 @@ yarn start
 
 * [Axios](https://axios-http.com/)
 
-## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
 ## Credit and Collaborations
+
+[Hexx King](https://github.com/HexxKing)
+
+[Moshin Behi](http://github.com/Mbehi)
 
 ## Resources
 
@@ -91,6 +90,10 @@ Estimate of time needed to complete: 1.5 hours
 
 Start time: 11:40pm
 
-Finish time:
+Finish time: 12:10am
 
-Actual time needed to complete:
+Actual time needed to complete: 30 minutes
+
+## Diagram of API Request
+
+![alt text](city-explorer.PNG)

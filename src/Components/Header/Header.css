@@ -3,3 +3,7 @@ header {
   background-color: rgba(187, 214, 177, 0.472);
   color :#304634
 }
+
+header h1 {
+  padding-bottom: 8px;
+}
