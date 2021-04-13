@@ -8,6 +8,7 @@ import Error from './Components/Error/Error';
 
 import './App.css'
 
+const WEATHER_URL = process.env.REACT_APP_WEATHER_URL || 'http://localhost:3001/weather'; 
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +16,7 @@ class App extends React.Component {
       haveSearched: false,
       citySearched: '',
       locationData: {},
+      weather: [],
       errors: [],
     };
   }
@@ -28,12 +30,14 @@ class App extends React.Component {
       console.warn('No City Selected');
     } else {
       try {
-        // TODO: Handle searches from multiple regions
+        // TODO: Handle Weather
         let response = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_API_KEY}&q=${citySearched}&format=json&limit=1`);
+        let weather = await axios.get(`${WEATHER_URL}?lat=${response.data.lat}?lon=${response.data.lon}`);
         this.setState({
           haveSearched: true,
           citySearched: citySearched,
           locationData: response.data[0],
+          weather: weather,
         });
       } catch (err) {
         console.log(err.response);
