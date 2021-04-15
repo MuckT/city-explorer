@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Search from './Components/Search/Search';
 import City from './Components/City/City';
 import Error from './Components/Error/Error';
+import Weather from './Components/Weather/Weather';
 
 import './App.css'
 
@@ -37,7 +38,7 @@ class App extends React.Component {
           haveSearched: true,
           citySearched: citySearched,
           locationData: response.data[0],
-          weather: weather,
+          weather: weather.data,
         });
       } catch (err) {
         console.log(err.response);
@@ -54,7 +55,10 @@ class App extends React.Component {
       <>
         <Header />
         {this.state.haveSearched && this.state.errors.length === 0 ? 
-          <City handleShowSearch={this.showSearch} cityData={this.state.locationData} /> : 
+          <> 
+            <City handleShowSearch={this.showSearch} cityData={this.state.locationData} /> 
+            <Weather weather={this.state.weather} /> 
+          </>: 
           this.state.errors.length !== 0 ?
           <Error handleSearch={this.handleSearch} errors={this.state.errors} /> :
           <Search handleSearch={this.handleSearch} />}
