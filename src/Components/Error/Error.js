@@ -6,8 +6,8 @@ import { Jumbotron, Button } from 'react-bootstrap';
 import './Error.css';
 
 class Error extends React.Component {
-  refreshPage = () => { 
-    window.location.reload(); 
+  refreshPage = () => {
+    window.location.reload();
   }
 
   render() {

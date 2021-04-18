@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import axios from 'axios';
 
 
@@ -29,7 +29,7 @@ class App extends React.Component {
   showSearch = () => {
     this.setState({haveSearched: false});
   }
- 
+
   handleSearch = async(citySearched) => {
     if(!citySearched) {
       console.warn('No City Searched');
@@ -68,12 +68,12 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        {this.state.haveSearched && this.state.errors.length === 0 ? 
-          <> 
-            <City handleShowSearch={this.showSearch} cityData={this.state.locationData} /> 
+        {this.state.haveSearched && this.state.errors.length === 0 ?
+          <>
+            <City handleShowSearch={this.showSearch} cityData={this.state.locationData} />
             <Weather weather={this.state.weather} />
             <Movies movies={this.state.movies} />
-          </>: 
+          </>:
           this.state.errors.length !== 0 ?
             <Error handleSearch={this.handleSearch} errors={this.state.errors} /> :
             <Search handleSearch={this.handleSearch} />}
