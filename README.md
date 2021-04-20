@@ -14,7 +14,13 @@
 yarn 
 ```
 
-2. Serve App Locally
+2. Get an API key to [LocationIQ](https://locationiq.com/) and set to the following variables in your `.env` file
+
+```
+REACT_APP_LOCATION_IQ_API_KEY=<LocationIQ API Key>
+```
+
+3. Serve App Locally
 
 ```bash
 yarn start
